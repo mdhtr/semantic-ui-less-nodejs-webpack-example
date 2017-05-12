@@ -5,7 +5,11 @@ var port = 8080;
 
 app.get('/', function (req, res) {
     res.setHeader('content-type', 'text/html');
-    res.sendFile(path.join(__dirname, './index.html'));
+    res.sendFile(path.join(__dirname, './src/index.html'));
+});
+app.get('/index.js', function (req, res) {
+    res.setHeader('content-type', 'application/javascript');
+    res.sendFile(path.join(__dirname, './src/index.js'));
 });
 
 app.listen(port, function () {
