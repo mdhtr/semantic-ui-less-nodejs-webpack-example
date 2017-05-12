@@ -11,6 +11,7 @@
     "express": "^4.14.0"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^4.0.1",
     "webpack": "2.2.1"
   }
 }
