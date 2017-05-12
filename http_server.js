@@ -7,9 +7,9 @@ app.get('/', function (req, res) {
     res.setHeader('content-type', 'text/html');
     res.sendFile(path.join(__dirname, './src/index.html'));
 });
-app.get('/index.js', function (req, res) {
+app.get('/bundle.js', function (req, res) {
     res.setHeader('content-type', 'application/javascript');
-    res.sendFile(path.join(__dirname, './src/index.js'));
+    res.sendFile(path.join(__dirname, './dist/bundle.js'));
 });
 
 app.listen(port, function () {
